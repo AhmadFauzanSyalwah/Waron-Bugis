@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waron Bugis</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="src/Logo Waron Bugis.png">
 </head>
 <body>
     <!--HEADER-->
     <header>
-        <h1 align="center">Selamat Datang di Waron Bugis</h1>
-        <p align="center">Kuliner Autentik Khas Sulawesi Selatan</p>
+        <h1 id="kembali" align="center">Selamat Datang di Waron Bugis</h1>
+        <p align="center"><i>"Autentik Khas Sulawesi Selatan"</i></p>
         <hr>
     </header>
     <!--NAVIGASI-->
@@ -20,6 +21,7 @@
             <a href="#rekomendasi" title="Ini kukasihkan ki rekomendasiku">Rekomendasi</a> |
             <a href="#harga" title="Sudah pasti aman ji didompet ta">Rincian Harga</a> |
             <a href="#lokasi" title="Mampir disini ki nah, liat jugaa waktu buka ta">Lokasi & Jam Operasional</a> |
+            <a href="#pemesanan" title="Bisa ji kita hubungi ka">Form Pemesanan</a> |
             <a href="#kontak" title="Bisa ji kita hubungi ka">Kontak & Media Sosial</a>
         </p>
         <hr>
@@ -46,21 +48,21 @@
                 </tr>
             </table>
             </center>
-            <p align="center">
+            <p id="deks" align="center">
                 Waron Bugis hadir sebagai destinasi kuliner autentik yang menyajikan cita rasa khas Sulawesi Selatan dengan penuh kebanggaan dan kecintaan terhadap warisan budaya leluhur. Setiap hidangan kami diolah menggunakan rempah-rempah pilihan dan resep tradisional turun-temurun yang telah terjaga keasliannya selama bertahun-tahun. Kami menyediakan berbagai pilihan menu mulai dari makanan berat, minuman segar, hingga dessert manis khas Bugis-Makassar yang siap memanjakan selera Anda. Kebersihan dan kualitas bahan baku menjadi prioritas utama kami agar setiap suapan memberikan pengalaman kuliner yang tak terlupakan bagi setiap pelanggan. Segera kunjungi Waron Bugis dan rasakan sendiri kehangatan cita rasa "To Ugi" yang sesungguhnya, karena kami hadir untuk membawa kampung halaman lebih dekat ke hati Anda.
             </p>
             <hr>
         </section>
         <!--SECTION 2: MENU-->
         <section id="menu">
-            <h2 align="center">Menu Kami</h2>
+            <h2 id="subjud" align="center">Menu Kami</h2>
             <hr>
-            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+            <table border="4" cellpadding="10" cellspacing="0" width="100%">
                 <thead>
                     <tr>
-                        <th colspan="2"><h2>Makanan</h2></th>
-                        <th colspan="2"><h2>Minuman</h2></th>
-                        <th colspan="2"><h2>Dessert</h2></th>
+                        <th colspan="2"><h2 id="subjud">Makanan</h2></th>
+                        <th colspan="2"><h2 id="subjud">Minuman</h2></th>
+                        <th colspan="2"><h2 id="subjud">Dessert</h2></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -109,17 +111,17 @@
             <hr>
         </section>
 
-        <!-- SECTION 3: REKOMENDASI MENU TERBAIK (Tag Semantik + Tabel HTML) -->
+        <!--SECTION 3: REKOMENDASI MENU TERBAIK-->
         <section id="rekomendasi">
-            <h2 align="center">Rekomendasi Kami</h2>
+            <h2 id="subjud" align="center">Rekomendasi Kami</h2>
             <hr>
             <table border="1" cellpadding="10" cellspacing="0" width="100%">
                 <thead>
                     <tr>
-                        <th>No</th>
-                        <th>Nama Menu</th>
-                        <th>Kategori</th>
-                        <th>Alasan Direkomendasikan</th>
+                        <th id="subjud">No</th>
+                        <th id="subjud">Nama Menu</th>
+                        <th id="subjud">Kategori</th>
+                        <th id="subjud">Alasan Direkomendasikan</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -154,9 +156,9 @@
 
         <!--SECTION 4: RINCIAN HARGA-->
         <section id="harga">
-            <h2 align="center">Rincian Harga</h2>
+            <h2 id="subjud" align="center">Rincian Harga</h2>
             <hr>
-            <table border="1" cellpadding="10" cellspacing="0" width="95%" align="center">
+            <table border="1" cellpadding="1" cellspacing="0" width="95%" align="center">
                 <thead>
                     <tr>
                         <th><h3>Makanan</h3></th>
@@ -203,7 +205,7 @@
         </section>
         <!--SECTION 5: LOKASI & JAM OPERASIONAL-->
         <section id="lokasi">
-            <h2 align="center">Lokasi & Jam Operasional</h2>
+            <h2 id="subjud" align="center">Lokasi & Jam Operasional</h2>
             <hr>
             <h3>Alamat</h3>
             <p>
@@ -237,8 +239,68 @@
             </table>
             <hr>
         </section>
-        <!--SECTION 6: KONTAK & MEDIA SOSIAL-->
-        <section id="kontak">
+        <!--Sectin 6 : PEMESANAN-->
+        <section id="pemesanan">
+            <h2 id="subjud" align="center">Form Pesanan Waron Bugis</h2>
+            <hr>
+            <form action="/submit" method="POST">
+        
+        <h3>Data Pemesan</h3>
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama"><br><br>
+        <label for="telepon">Nomor WhatsApp:</label><br>
+        <input type="tel" id="telepon" name="telepon"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <hr>
+        <!--Opsi Menu-->
+        <h3>Pilihan Menu</h3>
+        <label>Makanan:</label><br>
+        <input type="checkbox" name="menu" value="Nasu Palekko"> <label>Nasu Palekko - Rp. 40.000</label><br>
+        <input type="checkbox" name="menu" value="Coto Makassar"> <label>Coto Makassar - Rp. 20.000</label><br>
+        <input type="checkbox" name="menu" value="Pallubasa"> <label>Pallubasa - Rp. 15.000</label><br>
+        <input type="checkbox" name="menu" value="Buras"> <label>Buras - Rp. 5.000</label><br>
+        <input type="checkbox" name="menu" value="Konro"> <label>Konro - Rp. 35.000</label><br><br>
+        <!--Opsi Minuman-->
+        <label>Minuman:</label><br>
+        <input type="checkbox" name="menu" value="Sarabba"> <label>Sarabba - Rp. 8.000</label><br>
+        <input type="checkbox" name="menu" value="Es Markisa"> <label>Es Markisa - Rp. 7.000</label><br>
+        <input type="checkbox" name="menu" value="Teh Talua"> <label>Teh Talua - Rp. 8.000</label><br>
+        <input type="checkbox" name="menu" value="Es Kelapa Muda"> <label>Es Kelapa Muda - Rp. 10.000</label><br>
+        <input type="checkbox" name="menu" value="Es Pisang Ijo"> <label>Es Pisang Ijo - Rp. 10.000</label><br><br>
+        <!--Opsi Dessert-->
+        <label>Dessert:</label><br>
+        <input type="checkbox" name="menu" value="Barongko"> <label>Barongko - Rp. 10.000</label><br>
+        <input type="checkbox" name="menu" value="Pallu Butung"> <label>Pallu Butung - Rp. 8.000</label><br>
+        <input type="checkbox" name="menu" value="Lappa Lappa"> <label>Lappa Lappa - Rp. 7.000</label><br>
+        <input type="checkbox" name="menu" value="Cucuru"> <label>Cucuru - Rp. 5.000</label><br>
+        <input type="checkbox" name="menu" value="Onde Onde Bugis"> <label>Onde Onde Bugis - Rp. 5.000</label><br><br>
+                <hr>
+        <!--Detail Pesananan-->
+        <h3>Detail Pesanan</h3>
+        <label for="jumlah">Jumlah Porsi:</label><br>
+        <input type="number" id="jumlah" name="jumlah" min="1" value="1"><br><br>
+        <label for="metode">Metode Penerimaan:</label><br>
+        <select id="metode" name="metode">
+            <option value="Ambil Sendiri">Ambil Sendiri</option>
+            <option value="Pesan Antar">Pesan Antar</option>
+        </select><br><br>
+        <label for="alamat">Alamat Pengiriman (jika pesan antar):</label><br>
+        <input type="text" id="alamat" name="alamat" size="40"><br><br>
+        <label for="waktu">Waktu Pengambilan/Pengiriman:</label><br>
+        <input type="text" id="waktu" name="waktu" placeholder="Contoh: 12.00 WITA"><br><br>
+        <hr>
+        <p><b>Catatan:</b> Minimal order pesan antar Rp. 30.000. Area pengiriman: Kota Parepare dan sekitarnya.</p>
+        <p>Konfirmasi pesanan via WhatsApp: <b>0812-3456-7890</b></p>
+        <hr>
+        <input type="submit" value="Kirim Pesanan">
+        <input type="reset" value="Reset Form">
+    </form>
+
+    <hr>
+        </section>
+        <!--SECTION 7: KONTAK & MEDIA SOSIAL-->
+        <section id="kontak" id="subjud">
             <h2 align="center">Kontak & Media Sosial</h2>
             <hr>
             <h3>Hubungi Kami</h3>
@@ -263,11 +325,13 @@
                 <li>Pesan via WhatsApp : 0812-3456-7890</li>
             </ul>
             <hr>
+            <p align="center"><a href="#kembali" title="Kembali keatas">Kembali</a></p>
+            <hr>
         </section>
     </main>
     <!--FOOTER dan copyright by tim Ahmad (Ahmad Fauzan Syalwah dan Arya Ahmad)-->
     <footer>
-        <p align="center">&copy; 2026 Waron Bugis - Kuliner Autentik Khas Sulawesi Selatan</p>
+        <p id="deks" align="center">&copy; 2026 Waron Bugis - Kuliner Autentik Khas Sulawesi Selatan</p>
         <p align="center">Dibuat by Tim Ahmad</p>
     </footer>
 </body>
